@@ -1,12 +1,13 @@
 <?php
 
+$nome = $_POST['nome'];
 $email = $_POST['email'];
 
 $dados = array('list' => array(
 	'contacts' => array(array(
 		'email' => $email,
 		'cunstom_fields' => array(
-			'nome' => $email
+			'nome' => $nome
 			)
 		)
 	),
