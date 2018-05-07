@@ -15,7 +15,7 @@ $dados = array('list' => array(
 
 $data_string = json_encode($dados);                                                                                   
 
-$ch = curl_init('https://emailmarketing.locaweb.com.br/api/v1/accounts/97918/lists/6/contacts');
+$ch = curl_init('https://emailmarketing.locaweb.com.br/api/v1/accounts/NUMERO_DA_SUA_CONTA/lists/NUMERO_DA_SUA_LISTA/contacts');
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
 curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -23,7 +23,7 @@ curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
 curl_setopt($ch, CURLOPT_HTTPHEADER, array(
 	'GET: https://emailmarketing.locaweb.com.br/api/v1/accounts',
     'Content-Type: application/json',
-	'X-Auth-Token: auewcrEihdEVK8CKvFeLSEySf5yNEMwRSp6dpxh6pzcr'
+	'X-Auth-Token: AQUI_VAI_O_SEU_TOKEN'
 	)
 );
 $result = curl_exec($ch);
